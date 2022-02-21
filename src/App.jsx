@@ -4,8 +4,8 @@ import Landing from './components/Landing'
 import Navbar from './components/Navbar'
 
 const AppWrapper = styled.div`
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,6 +25,8 @@ const MainContainer = styled.div`
   padding: 0;
   box-sizing: border-box;
   width: 100%;
+  height: 100vh;
+  height: auto;
   background: transparent;
   overflow: hidden;
 `

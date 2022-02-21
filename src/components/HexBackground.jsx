@@ -18,7 +18,7 @@ const HexBackground = () => {
   
     const handleResize=()=> {
       setDimensions(60 + getextra())
-      console.log("changed")
+      // console.log("changed")
     }
   
     const Box = ({rowKey, colKey, HW, extra}) => {
@@ -43,11 +43,11 @@ const HexBackground = () => {
     
     const dimensions = Math.ceil(Dimensions)
     const columns = Math.floor(window.innerHeight / dimensions)
-    const rows = Math.floor(window.innerWidth / dimensions *.65)
-    console.log(rows)
+    const rows = Math.floor(window.innerWidth / dimensions *.60)
+    // console.log(rows)
     const allHexes = []
     const extraHexes = []
-    for (let i = rows * -1; i <= rows; i++) {
+    for (let i = rows * -1; i <= rows +1; i++) {
         const boxes = [];
         for (let j = -1 ; j <= columns +1; j++) {
         boxes.push(<Box rowKey= {j} colKey={i} key={`box right ${i} ${j}`} HW={dimensions}/>)

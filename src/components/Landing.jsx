@@ -60,15 +60,19 @@ const LandingButton = styled.a`
   margin-top: 2rem;
   position: relative;
   transition: all 0.35s;
-  color: white;
   background: white;
   background: -webkit-linear-gradient(-45deg, #222222, #494949);
   background: linear-gradient(-45deg, #222222, #494949);
+  box-sizing: border-box;
   outline: none;
+  text-decoration: none;
   :hover{
     color: #fff;
     :after{
         width: 100%;
+    }
+    p{
+      color: #000000;
     }
   }
   :after{
@@ -78,25 +82,19 @@ const LandingButton = styled.a`
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--secondary-color);
-    background: -webkit-linear-gradient(
-    to left,
-    var(--secondary-color-alt),
-    var(--secondary-color)
-    );
-    background: linear-gradient(
-    to left,
-    var(--secondary-color-alt),
-    var(--secondary-color)
-    );
+    background: #f6c388;
+    background: -webkit-linear-gradient( -45deg, #3a2818, #f6c388);
+    background: linear-gradient( -45deg, #3a2818, #f6c388 );
     transition: all 0.2s;
     border-radius: 4px;
   }
+
   p{
-    color: rgb(255, 255, 255);
+    color: #eec799;
     font-size: 1rem;
     font-weight: 700;
     z-index: 2;
+    transition: all 0.35s;
   }
 `
 

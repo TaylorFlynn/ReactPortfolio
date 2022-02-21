@@ -10,14 +10,14 @@ const SectionHeader = styled.h2`
     span {
         background: #f6c388;
         background: -webkit-linear-gradient(
-        45deg,
+        140deg,
         #f6c388,
-        #332719
+        #3a2818
         );
         background: linear-gradient(
-        45deg,
+        140deg,
         #f6c388,
-        #382b1d
+        #3a2818
         );
         background-clip: text;
         -webkit-background-clip: text;
