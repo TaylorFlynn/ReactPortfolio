@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HexBackground from './components/HexBackground';
+import HexBackground from './components/HexBackgroundPure';
 import Landing from './components/Landing'
 import Navbar from './components/Navbar'
 
