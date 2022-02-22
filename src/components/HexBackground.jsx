@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import '../App.css'
 import styled from "styled-components";
 
 const HexWrapper = styled.section`
