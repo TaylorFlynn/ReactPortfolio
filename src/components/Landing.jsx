@@ -3,17 +3,17 @@ import styled from "styled-components";
 import SectionHeading from './SectionHeading'
 
 const LandingSection = styled.div`
-    position: relative;
-    background: transparent;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin-top: 80px;
+  position: relative;
+  background: transparent;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 80px;
 `
 const LandingArea = styled.div`
   position: absolute;
@@ -28,6 +28,11 @@ const LandingArea = styled.div`
   margin: 0 auto;
   text-align: center;
   padding: 30px;
+  /* -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+  background: #ffffff1d;
+  border-radius: 10%;
+  filter: blur(2px); */
 `
 const LandingButtons = styled.div`
   display: flex;

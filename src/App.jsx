@@ -25,10 +25,11 @@ const MainContainer = styled.div`
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   height: auto;
   background: transparent;
   overflow: hidden;
+  overflow-y: scroll;
 `
 
 
@@ -40,6 +41,7 @@ function App() {
       <Navbar/>
       <HexBackground/>
       <MainContainer>
+        <Landing/>
         <Landing/>
       </MainContainer>
     </AppWrapper>
