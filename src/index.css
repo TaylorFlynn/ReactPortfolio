@@ -6,11 +6,18 @@
   font-family: "Kumbh Sans", sans-serif;
   scroll-behavior: smooth;
 }
+:root {
+  --primary-color: #e4ad6f;
+  --primary-color-alt: #5e311e;
+  --secondary-color: #e4ad6f;
+  --secondary-color-alt: #5e311e;
+}
 
 html {
   scroll-behavior: smooth;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 body {

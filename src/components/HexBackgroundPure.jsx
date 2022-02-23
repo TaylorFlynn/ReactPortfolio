@@ -27,7 +27,6 @@ const BackgroundContainer = styled.div`
     #5e311e
   );
   z-index: -300;
-  overflow: hidden;
   /* background: rgb(39, 255, 111); */
 `
 const BackdropOverlay = styled.div`
@@ -138,7 +137,7 @@ const HexBackground = () => {
   const [Dimensions, setDimensions] = useState(60)
   
   useEffect(() => {
-    window.addEventListener("resize",  handleResize)
+    window.addEventListener("resize",  () => setDimensions(60 + getextra()));
     window.addEventListener("mousemove",  function(e){
       document.getElementById('MouseHighlight').style.left= `${e.clientX}px`;
       document.getElementById('MouseHighlight').style.top= `${e.clientY}px`;
@@ -147,11 +146,7 @@ const HexBackground = () => {
     });
     setDimensions(60 + getextra())
   }, []);
-  
-  const handleResize=()=> {
-    setDimensions(60 + getextra())
-    // console.log("changed")
-  }
+
   
   const Box = ({rowKey, colKey, HW, decorative}) => {
     const colOffset = colKey % 2 === 0 ? 1.04*HW/2 : 0;

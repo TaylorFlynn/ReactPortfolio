@@ -2,6 +2,7 @@ import styled from "styled-components";
 import HexBackground from './components/HexBackgroundPure';
 import Landing from './components/Landing'
 import Navbar from './components/Navbar'
+import Projects from "./components/Projects";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -28,8 +29,6 @@ const MainContainer = styled.div`
   min-height: 100%;
   height: auto;
   background: transparent;
-  overflow: hidden;
-  overflow-y: scroll;
 `
 
 
@@ -42,7 +41,7 @@ function App() {
       <HexBackground/>
       <MainContainer>
         <Landing/>
-        <Landing/>
+        <Projects/>
       </MainContainer>
     </AppWrapper>
 

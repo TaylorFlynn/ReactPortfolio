@@ -4,7 +4,7 @@ import { Break960 } from '../responsive';
 
 const NavbarSection = styled.nav`
     background: transparent;
-    /* background: linear-gradient(to bottom, #181818, #141414), transparent; */
+    background: linear-gradient(to bottom, #181818, #141414), transparent;
     height: 80px;
     width: 100vw;
     display: flex;

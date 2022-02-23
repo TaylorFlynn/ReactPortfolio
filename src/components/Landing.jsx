@@ -14,6 +14,7 @@ const LandingSection = styled.div`
   padding: 0;
   box-sizing: border-box;
   margin-top: 80px;
+  overflow: hidden;
 `
 const LandingArea = styled.div`
   position: absolute;
