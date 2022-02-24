@@ -3,6 +3,7 @@ import HexBackground from './components/HexBackgroundPure';
 import Landing from './components/Landing'
 import Navbar from './components/Navbar'
 import Projects from "./components/Projects";
+import Stack from "./components/Stack";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -42,6 +43,7 @@ function App() {
       <MainContainer>
         <Landing/>
         <Projects/>
+        <Stack/>
       </MainContainer>
     </AppWrapper>
 
