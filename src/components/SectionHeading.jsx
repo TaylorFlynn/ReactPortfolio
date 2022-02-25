@@ -5,7 +5,7 @@ const SectionHeader = styled.h2`
     margin: 0;
     color: #fff;
     font-size: 5rem;
-    margin-bottom: 3vw;
+    margin-bottom: ${props=> props.marginBottom || 3}"px";
     font-size: 100px;
     span {
         background: #f6c388;

@@ -4,6 +4,7 @@ import Landing from './components/Landing'
 import Navbar from './components/Navbar'
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
+import About from "./components/About";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -12,7 +13,7 @@ const AppWrapper = styled.div`
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  /* font-family: "Kumbh Sans", sans-serif; */
+  font-family: "Kumbh Sans", sans-serif;
 `
 const MainContainer = styled.div`
   position: absolute;
@@ -44,6 +45,7 @@ function App() {
         <Landing/>
         <Projects/>
         <Stack/>
+        <About/>
       </MainContainer>
     </AppWrapper>
 

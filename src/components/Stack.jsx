@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styled from "styled-components";
-import SectionHeading from './SectionHeading'
-import { Break1300, Break768, Break480, Break320 } from '../responsive';
+import SectionHeading from './SectionHeading';
+import { Break768 } from '../responsive';
 // import "../styles.css"
 import "../index.css"
 
@@ -17,7 +17,6 @@ const StackSection = styled.section`
   ${Break768({ 
         paddingTop: "80px"
     })};
-    
 `;
 const StackWrapper = styled.div`
     display: flex;
