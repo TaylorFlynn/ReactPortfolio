@@ -8,6 +8,7 @@ import Stack from "./components/Stack";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -52,6 +53,7 @@ function App() {
         <Stack/>
         <About setResumePosition={setResumePosition}/>
         <Contact/>
+        <Footer/>
       </MainContainer>
     </AppWrapper>
 
