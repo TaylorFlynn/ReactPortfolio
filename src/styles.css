@@ -968,7 +968,7 @@ body {
   height: 100vh;
   top: 0;
   bottom: 0;
-  left: -100%;
+  left: 0;
   z-index: 999;
   overflow: hidden;
   transition: left 0.6s cubic-bezier(1, -0.03, 0.28, 0.3);

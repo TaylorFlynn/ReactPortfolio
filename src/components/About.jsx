@@ -290,8 +290,8 @@ const ResumeButton = styled.button`
     }
 `;
 
-const About = () => {
-    const [HighlightPosition, setHighlightPosition] = useState("translateX(200%)")
+const About = ({setResumePosition}) => {
+    const [HighlightPosition, setHighlightPosition] = useState("translateX(0%)")
     const [SlidePosition, setSlidePosition] = useState("100vw")
     const handleSlider = (e) => {
         if (e.target.id === "Professional") {
@@ -305,6 +305,9 @@ const About = () => {
             setHighlightPosition("translateX(200%)");
             setSlidePosition("-100vw")
         }
+    }
+    const showResume=()=> {
+        setResumePosition("0%")
     }
 
     return (
@@ -343,7 +346,7 @@ const About = () => {
                                 </AboutParagraph>
                             </AboutContentCenter>
                             <AboutContentLower>
-                                <ResumeButton id="Resume__open_button">
+                                <ResumeButton id="Resume__open_button" onClick={() => showResume()}>
                                     <p>Full Resume</p>
                                 </ResumeButton>
                             </AboutContentLower>

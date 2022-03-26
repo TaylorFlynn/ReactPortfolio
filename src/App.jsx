@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import HexBackground from './components/HexBackgroundPure';
 import Landing from './components/Landing'
@@ -5,6 +6,8 @@ import Navbar from './components/Navbar'
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 import About from "./components/About";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -36,16 +39,19 @@ const MainContainer = styled.div`
 
 
 function App() {
+  const [ResumePosition, setResumePosition] = useState("-115%")
 
   return (
     <AppWrapper id="app__wrapper" style={{scrollBehavior: "smooth"}}>
       <Navbar/>
       <HexBackground/>
+      <Resume ResumePosition={ResumePosition} setResumePosition={setResumePosition}/>
       <MainContainer>
         <Landing/>
         <Projects/>
         <Stack/>
-        <About/>
+        <About setResumePosition={setResumePosition}/>
+        <Contact/>
       </MainContainer>
     </AppWrapper>
 

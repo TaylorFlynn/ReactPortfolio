@@ -7,6 +7,13 @@ export const Break1300 = (props) => {
     }
   `;
 };
+export const Break1100 = (props) => {
+  return css`
+    @media only screen and (max-width: 1300px) {
+      ${props}
+    }
+  `;
+};
 export const Break960 = (props) => {
   return css`
     @media only screen and (max-width: 960px) {
